@@ -7,64 +7,65 @@ ZkSnap is a privacy-preserving voting protocol that enables anonymous, verifiabl
 ZkSnap is designed to achieve several critical properties:
 
 1. **Vote Privacy**
-   - Individual votes remain secret
-   - Vote contents are encrypted until tallying
-   - No correlation between voters and votes
+    - Individual votes remain secret
+    - Vote contents are encrypted until tallying
+    - No correlation between voters and votes
 
 2. **Collusion Resistance**
-   - Prevents vote buying/selling
-   - Voters cannot prove their vote choice
-   - Key changes remain private
+    - Prevents vote buying/selling
+    - Voters cannot prove their vote choice
+    - Key changes remain private
 
 3. **Vote Integrity**
-   - One vote per eligible voter
-   - All valid votes are counted
-   - Results are verifiable
+    - One vote per eligible voter
+    - All valid votes are counted
+    - Results are verifiable
 
 4. **Efficiency**
-   - Zero cost for voters
-   - Minimal on-chain footprint
-   - Efficient proof verification
+    - Zero cost for voters
+    - Minimal on-chain footprint
+    - Efficient proof verification
+
 
 ## System Participants
 
 ### 1. Voters
-- Hold registration and voting keys
-- Create encrypted votes
-- Generate zero-knowledge proofs
+    - Hold registration and voting keys
+    - Create encrypted votes
+    - Generate zero-knowledge proofs
 
 ### 2. Coordinator
-- Manages vote collection
-- Aggregates encrypted votes
-- Generates aggregate proofs
-- Cannot manipulate votes
+    - Manages vote collection
+    - Aggregates encrypted votes
+    - Generates aggregate proofs
+    - Cannot manipulate votes
 
 ### 3. Verifiers
-- Anyone can verify results
-- Check proof validity
-- Verify final tally
+    - Anyone can verify results
+    - Check proof validity
+    - Verify final tally
 
 ## Core Components
 
 ### 1. Dual Key System
 The protocol uses two types of keys:
-- **Registration Key**: Proves voting eligibility
-- **Voting Key**: Used for actual vote casting
-  - Can be changed privately
-  - Changes are undetectable
+    - **Registration Key**: Proves voting eligibility
+    - **Voting Key**: Used for actual vote casting
+        - Can be changed privately
+        - Changes are undetectable
 
 ### 2. Nullifier System
 Prevents double voting while maintaining privacy:
-- One nullifier per voter
-- Deterministically generated
-- Cannot be linked to voter identity
+    - One nullifier per voter
+    - Deterministically generated
+    - Cannot be linked to voter identity
 
 ### 3. Vote Structure
 Each vote contains:
-- Encrypted vote choice
-- Vote nullifier
-- Zero-knowledge proof
-- Public parameters
+    - Encrypted vote choice
+    - Vote nullifier
+    - Zero-knowledge proof
+    - Public parameters
 
 ### 4. Time Lock System
 Ensures vote privacy during voting:
@@ -101,17 +102,17 @@ Ensures vote privacy during voting:
 ## Security Properties
 
 ### Guaranteed Properties
-- No one can determine individual votes
-- Votes cannot be changed or deleted
-- Double voting is impossible
-- Results are verifiable
-- Vote buying is ineffective
+    - No one can determine individual votes
+    - Votes cannot be changed or deleted
+    - Double voting is impossible
+    - Results are verifiable
+    - Vote buying is ineffective
 
 ### Trust Assumptions
-- Coordinator is semi-honest
-- Time-lock mechanism is secure
-- Cryptographic primitives are secure
-- ZK proof system is sound
+    - Coordinator is semi-honest
+    - Time-lock mechanism is secure
+    - Cryptographic primitives are secure
+    - ZK proof system is sound
 
 ## Protocol Innovations
 

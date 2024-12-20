@@ -28,42 +28,43 @@ This document details how ZkSnap prevents vote buying and selling through its cr
 The dual key system prevents vote proving:
 
 1. **Registration Key**
-   - Never used for voting
-   - Only proves eligibility
-   - Cannot link to votes
+    - Never used for voting
+    - Only proves eligibility
+    - Cannot link to votes
 
 2. **Voting Key**
-   - Used for actual voting
-   - Cannot prove which key voted
-   - No public key history
+    - Used for actual voting
+    - Cannot prove which key voted
+    - No public key history
+
 
 ### 2. Vote Privacy
 
 Multiple layers ensure vote content privacy:
 
 1. **Encryption**
-   - Homomorphic encryption
-   - Timelock protection
-   - No early decryption
+    - Homomorphic encryption
+    - Timelock protection
+    - No early decryption
 
 2. **Proof System**
-   - Zero-knowledge proofs
-   - No vote content revelation
-   - Validity verification only
+    - Zero-knowledge proofs
+    - No vote content revelation
+    - Validity verification only
 
 ### 3. Nullifier System
 
 Ensures one-time voting while maintaining privacy:
 
 1. **Properties**
-   - One nullifier per voter
-   - Cannot link to identity
-   - Prevents double voting
+    - One nullifier per voter
+    - Cannot link to identity
+    - Prevents double voting
 
 2. **Privacy Features**
-   - No voter correlation
-   - No vote linkability
-   - Deterministic generation
+    - No voter correlation
+    - No vote linkability
+    - Deterministic generation
 
 ## Attack Prevention
 
