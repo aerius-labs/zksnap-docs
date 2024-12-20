@@ -116,16 +116,16 @@ Ensures vote privacy during voting:
 ## Protocol Innovations
 
 1. **Key Privacy**
-   - Private key evolution
-   - Undetectable changes
-   - Maintained vote validity
+    - Private key evolution
+    - Undetectable changes
+    - Maintained vote validity
 
 2. **Nullifier Design**
-   - Efficient verification
-   - Privacy preserving
-   - Double-spend prevention
+    - Efficient verification
+    - Privacy preserving
+    - Double-spend prevention
 
 3. **Proof System**
-   - Vote validity proofs
-   - Aggregation proofs
-   - Efficient verification
+    - Vote validity proofs
+    - Aggregation proofs
+    - Efficient verification
