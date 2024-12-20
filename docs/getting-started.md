@@ -8,9 +8,9 @@ This guide provides a high-level overview of the ZkSnap protocol and its core co
 
 ### What is ZkSnap?
 ZkSnap is a protocol that enables private, verifiable voting while preventing vote buying and coercion. It achieves this through:
-- A dual key system for voter privacy
-- Time-locked vote revelation
-- Zero-knowledge proofs for verification
+    - A dual key system for voter privacy
+    - Time-locked vote revelation
+    - Zero-knowledge proofs for verification
 
 ### Key Components
 

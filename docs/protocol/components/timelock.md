@@ -5,16 +5,16 @@ ZkSnap uses timelock encryption to ensure vote privacy during the voting period 
 ## Overview
 
 ### Purpose
-- Prevent early vote counting
-- Ensure vote privacy during voting
-- Enable verifiable decryption timing
-- Prevent coordinator manipulation
+    - Prevent early vote counting
+    - Ensure vote privacy during voting
+    - Enable verifiable decryption timing
+    - Prevent coordinator manipulation
 
 ### Properties
-- Time-based encryption
-- Distributed trust
-- Verifiable delay
-- Guaranteed decryption
+    - Time-based encryption
+    - Distributed trust
+    - Verifiable delay
+    - Guaranteed decryption
 
 ## Timelock Components
 

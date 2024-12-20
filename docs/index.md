@@ -3,10 +3,10 @@
 # ZkSnap: Privacy-Preserving, Collusion-Resistant Voting
 
 ZkSnap is a zero-knowledge voting protocol designed for decentralized organizations that provides:
-- Complete vote privacy
-- Prevention of vote buying and selling
-- Zero-cost voting
-- Universal result verification
+    - Complete vote privacy
+    - Prevention of vote buying and selling
+    - Zero-cost voting
+    - Universal result verification
 
 ## Key Properties
 

@@ -5,10 +5,10 @@ The tallying phase occurs after voting ends and the timelock expires, enabling d
 ## Overview
 
 The tallying phase involves:
-- Timelock expiration
-- Vote decryption
-- Result computation
-- Proof generation
+    - Timelock expiration
+    - Vote decryption
+    - Result computation
+    - Proof generation
 
 ## Timelock Expiration
 

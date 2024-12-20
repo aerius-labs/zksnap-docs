@@ -5,10 +5,10 @@ The voting phase is when registered voters submit their encrypted votes with zer
 ## Overview
 
 During this phase:
-- Voters create encrypted votes
-- Generate validity proofs
-- Submit votes to coordinator
-- Coordinator verifies and processes votes
+    - Voters create encrypted votes
+    - Generate validity proofs
+    - Submit votes to coordinator
+    - Coordinator verifies and processes votes
 
 ## Vote Creation
 

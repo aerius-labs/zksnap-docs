@@ -5,10 +5,10 @@ The setup phase initializes the ZkSnap protocol and establishes the parameters a
 ## Overview
 
 The setup phase accomplishes:
-- System parameter generation
-- Coordinator initialization
-- Voter registration process
-- Timelock parameter setup
+    - System parameter generation
+    - Coordinator initialization
+    - Voter registration process
+    - Timelock parameter setup
 
 ## Protocol Parameters
 
