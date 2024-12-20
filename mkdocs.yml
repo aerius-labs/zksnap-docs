@@ -1,0 +1,69 @@
+site_name: ZkSnap Documentation
+site_description: A collusion resistant private voting protocol
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+nav:
+  - Home: index.md
+  - Guides:
+    - User Guide: guides/user-guide.md
+  - Protocol:
+    - Overview: protocol/overview.md
+    - Core Components:
+      - Dual Key System: protocol/components/key-system.md
+      - Nullifier System: protocol/components/nullifiers.md
+      - Timelock Encryption: protocol/components/timelock.md
+      - Zero Knowledge Proofs: protocol/components/zkp.md
+    - Protocol Phases:
+      - Setup Phase: protocol/phases/setup.md
+      - Voting Phase: protocol/phases/voting.md
+      - Tallying Phase: protocol/phases/tallying.md
+  - Security:
+    - Collusion Resistance: security/collusion-resistance.md
+    - Threat Model: security/threat-model.md
+    - Attack Vectors: security/attack-vectors.md
+    - Privacy Guarantees: security/privacy.md
+  - Technical Details:
+    - Cryptographic Primitives: technical/crypto-primitives.md
+    - Circuit Design: technical/circuits.md
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+  - tables
+  - def_list
+  - footnotes
+  - toc:
+      permalink: true
+  - attr_list
+  - md_in_html
+
+plugins:
+  - search
+  - minify:
+      minify_html: true
+  - mkdocs-pdf
