@@ -22,13 +22,13 @@ ZkSnap is a zero-knowledge voting protocol designed for decentralized organizati
    - Evolving voting keys for collusion prevention
 
 2. **Time-Locked Privacy**
-   - Vote contents remain encrypted during voting
-   - Results revealed only after deadline
+    - Vote contents remain encrypted during voting
+    - Results revealed only after deadline
 
 3. **Zero-Knowledge Proofs**
-   - Vote validity verification
-   - Private vote aggregation
+    - Vote validity verification
+    - Private vote aggregation
 
 4. **Deterministic Nullifiers**
-   - Double-vote prevention
-   - Vote linkability prevention
+    - Double-vote prevention
+    - Vote linkability prevention

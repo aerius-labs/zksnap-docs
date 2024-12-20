@@ -194,7 +194,7 @@ Check:
 ### Performance Considerations
 ```plaintext
 1. Registration Throughput
-   - Batch processing
+    - Batch processing
    - Parallel registration
    - State update efficiency
 

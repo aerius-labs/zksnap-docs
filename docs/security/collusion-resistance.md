@@ -7,19 +7,19 @@ This document details how ZkSnap prevents vote buying and selling through its cr
 ### Attack Scenarios
 
 1. **Direct Vote Buying**
-   - Attacker offers payment for specific votes
-   - Requests proof of voting choice
-   - Attempts to verify vote compliance
+    - Attacker offers payment for specific votes
+    - Requests proof of voting choice
+    - Attempts to verify vote compliance
 
 2. **Coercion Attempts**
-   - Forced vote choices
-   - Demanded vote proofs
-   - Verification of compliance
+    - Forced vote choices
+    - Demanded vote proofs
+    - Verification of compliance
 
 3. **Vote Selling**
-   - Voluntary vote selling
-   - Proof of vote choice
-   - Vote verification schemes
+    - Voluntary vote selling
+    - Proof of vote choice
+    - Vote verification schemes
 
 ## Security Mechanisms
 

@@ -7,16 +7,16 @@ The dual key system in ZkSnap forms the foundation of its privacy and collusion 
 ### Key Types
 
 1. **Registration Key**
-   - Permanent, identity-linked key pair
-   - Used to prove voting eligibility
-   - Registered in the voter Merkle tree
-   - Never used for actual voting
+    - Permanent, identity-linked key pair
+    - Used to prove voting eligibility
+    - Registered in the voter Merkle tree
+    - Never used for actual voting
 
 2. **Voting Key**
-   - Used for casting votes
-   - Can be privately changed
-   - No public link to registration key
-   - Generates vote nullifiers
+    - Used for casting votes
+    - Can be privately changed
+    - No public link to registration key
+    - Generates vote nullifiers
 
 ## Key Structures
 
@@ -41,24 +41,24 @@ VotingKey {
 ### Key Generation
 
 1. **Registration Key Generation**
-   - Generated during voter registration
-   - Added to voter Merkle tree
-   - Used to prove eligibility
+    - Generated during voter registration
+    - Added to voter Merkle tree
+    - Used to prove eligibility
 
 2. **Voting Key Generation**
-   - Independent from registration key
-   - Can generate multiple keys
-   - No on-chain record of changes
+    - Independent from registration key
+    - Can generate multiple keys
+    - No on-chain record of changes
 
 ### Key Changes
 
 The ability to change voting keys privately is crucial for collusion resistance:
 
 1. **Change Process**
-   - Generate new voting key pair
-   - No public record of change
-   - Old key remains valid for verification
-   - New key used for voting
+    - Generate new voting key pair
+    - No public record of change
+    - Old key remains valid for verification
+    - New key used for voting
 
 2. **Privacy Properties**
    - Changes are undetectable
@@ -89,26 +89,26 @@ The ability to change voting keys privately is crucial for collusion resistance:
 ### Guaranteed Properties
 
 1. **Key Separation**
-   - Registration key cannot be used to vote
-   - Voting key cannot be used to register
-   - No linkability between keys
+    - Registration key cannot be used to vote
+    - Voting key cannot be used to register
+    - No linkability between keys
 
 2. **Change Privacy**
-   - Key changes are private
-   - Cannot detect if keys changed
-   - Cannot link multiple keys
+    - Key changes are private
+    - Cannot detect if keys changed
+    - Cannot link multiple keys
    
 3. **Collusion Resistance**
-   - Cannot prove which key was used
-   - Cannot prove vote choice
-   - Deniable vote authorship
+    - Cannot prove which key was used
+    - Cannot prove vote choice
+    - Deniable vote authorship
 
 ### Security Requirements
 
 1. **Registration Key**
-   - Must remain secret
-   - Only used for eligibility proofs
-   - Never revealed in transactions
+    - Must remain secret
+    - Only used for eligibility proofs
+    - Never revealed in transactions
 
 2. **Voting Key**
    - Can be changed at will

@@ -15,35 +15,35 @@ ZkSnap is a protocol that enables private, verifiable voting while preventing vo
 ### Key Components
 
 1. **Voter Keys**
-   - Registration Key: Proves voting eligibility
-   - Voting Key: Used to cast votes, can be changed privately
+    - Registration Key: Proves voting eligibility
+    - Voting Key: Used to cast votes, can be changed privately
 
 2. **Vote Structure**
-   - Encrypted vote choice
-   - Nullifier to prevent double voting
-   - Zero-knowledge proof of validity
+    - Encrypted vote choice
+    - Nullifier to prevent double voting
+    - Zero-knowledge proof of validity
 
 3. **Coordinator**
-   - Processes votes
-   - Maintains vote state
-   - Generates aggregate proofs
+    - Processes votes
+    - Maintains vote state
+    - Generates aggregate proofs
 
 ## Protocol Flow
 
 1. **Setup Phase**
-   - System parameters generated
-   - Voter registration opens
-   - Timelock parameters established
+    - System parameters generated
+    - Voter registration opens
+    - Timelock parameters established
 
 2. **Voting Phase**
-   - Voters create encrypted votes
-   - Submit votes with proofs
-   - Can privately change voting keys
+    - Voters create encrypted votes
+    - Submit votes with proofs
+    - Can privately change voting keys
 
 3. **Tallying Phase**
-   - Timelock expires
-   - Votes decrypted and counted
-   - Results verified
+    - Timelock expires
+    - Votes decrypted and counted
+    - Results verified
 
 ## Next Steps
 - User Guide [here](guides/user-guide.md)

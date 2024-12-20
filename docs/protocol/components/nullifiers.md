@@ -158,25 +158,25 @@ Properties:
 ### During Vote Creation
 
 1. **Nullifier Generation**
-   - Create vote data
-   - Generate PLUME signature
-   - Derive nullifier
-   - Prepare inclusion proof
+    - Create vote data
+    - Generate PLUME signature
+    - Derive nullifier
+    - Prepare inclusion proof
 
 2. **Vote Submission**
-   - Include nullifier in vote
-   - Prove nullifier correctness
-   - Submit to coordinator
+    - Include nullifier in vote
+    - Prove nullifier correctness
+    - Submit to coordinator
 
 ### During Vote Processing
 
 1. **Coordinator Actions**
-   - Verify nullifier uniqueness
-   - Update nullifier tree
-   - Generate new root
-   - Create inclusion proof
+    - Verify nullifier uniqueness
+    - Update nullifier tree
+    - Generate new root
+    - Create inclusion proof
 
 2. **Verification Steps**
-   - Check nullifier validity
-   - Verify tree updates
-   - Confirm non-membership proofs
+    - Check nullifier validity
+    - Verify tree updates
+    - Confirm non-membership proofs
